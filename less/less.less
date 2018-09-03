@@ -1,27 +1,270 @@
-*{
+* {
   padding: 0;
   margin: 0;
   list-style: none;
-};
-.header{
+  text-decoration: none;
+  font-size: 14px;
+}
+
+;
+.header {
+  z-index: 100;
+  overflow: hidden;
   width: 100%;
-  height: 50px;
+  height: 51px;
   position: fixed;
   top: 0;
   border-top: 2px solid #eb7350;
   background: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   box-sizing: border-box;
-  .header_main{
+  border-bottom: 1px solid #ccc;
+  .header_main {
     width: 1280px;
-    height: 48px;
+    height: 47px;
     margin: auto;
-    background: #00b38a;
-    .logo{
+    background: #fff;
+    position: relative;
+    line-height: 47px;
+    .logo {
       background: url("../images/logo.png") no-repeat center;
       width: 140px;
       height: 48px;
       float: left;
+      margin-top: -2px;
+    }
+    .search {
+      opacity: 1;
+      margin-top: 11px;
+      width: 468px;
+      height: 28px;
+      float: left;
+      position: absolute;
+      left: 141px;
+      background-color: #EFEFEF;
+      color: #808080;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: inherit;
+      padding-left: 10px;
+      line-height: 28px;
+    }
+    .realSearch {
+      background-color: transparent;
+      opacity: 1;
+      margin-top: 10px;
+      width: 468px;
+      height: 28px;
+      float: left;
+      border: 1px solid #ccc;
+      z-index: 10;
+      position: absolute;
+      left: 140px;
+      padding-left: 10px;
+    }
+    .index {
+      width: 457px;
+      height: 47px;
+      float: right;
+
+    }
+  }
+}
+
+.mainArea {
+  width: 1170px;
+  margin: auto;
+  height: 2000px;
+  padding-top: 66px;
+  display: flex;
+  justify-content: space-between;
+  .nav, .nav1 {
+    width: 110px;
+    height: 513px;
+    background: white;
+    float: left;
+    li {
+      margin-bottom: 3px;
+      font-size: 12px;
+      letter-spacing: normal;
+      word-spacing: normal;
+      color: #fff;
+      text-align: center;
+      border-radius: 3px;
+      .current {
+        background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+        color: #fff;
+      }
+      a {
+        color: #333333;
+        display: block;
+        font-size: 18px;
+        height: 40px;
+        line-height: 42px;
+        border-radius: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 8px;
+      }
+      a:hover {
+        background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+        color: #fff;
+      }
+    }
+  }
+  .nav1 {
+    position: fixed;
+    top: 50px;
+    display: none;
+  }
+  .main {
+
+    width: 660px;
+    height: 888px;
+
+  }
+  .rightNav {
+    float: right;
+    width: 340px;
+    height: 999px;
+  
+    .login {
+      width: 340px;
+      height: 346px;
+      background: #f2f2f5;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      .minLogin {
+        border: 2px solid #EEEEF1;
+        box-sizing: border-box;
+        width: 300px;
+        height: 286px;
+        background: white;
+        position: relative;
+        .top {
+          width: 270px;
+          height: 44px;
+          margin: auto;
+          border-bottom: 1px solid #eee;
+          padding-top: 11px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+          .right, .left {
+            width: 50%;
+            float: left;
+            height: 33px;
+            box-sizing: border-box;
+            font-weight: 700;
+            text-align: center;
+
+            line-height: 30px;
+            color: #808080;
+          }
+          .current {
+            border-bottom: 3px solid #eb7350;
+            color: #000;
+          }
+        }
+        .idLogo {
+
+          width: 270px;
+          height: 191px;
+          margin: auto;
+          .textbox {
+            width: 270px;
+            height: 34px;
+            background: white;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            .person {
+              width: 36px;
+              height: 28px;
+              background: url("../images/sina.png") no-repeat;
+              background-position: 11px -91px;
+              float: left;
+            }
+            .text {
+              font-size: 10px;
+              outline: none;
+              border: 0;
+              background: none;
+              height: 34px;
+              color: #808080;
+            }
+          }
+          .passWorld {
+            margin-top: 12px;
+            width: 270px;
+            height: 34px;
+            background: white;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            .lock {
+              width: 36px;
+              height: 28px;
+              background: url("../images/sina.png") no-repeat;
+              background-position: -39px -91px;
+              float: left;
+            }
+            input {
+              font-size: 10px;
+              outline: none;
+              border: 0;
+              background: none;
+              height: 34px;
+              color: #ccc;
+
+            }
+          }
+          .remember {
+            height: 15px;
+            width: 270px;
+            margin: auto;
+            margin-top: 12px;
+            background: #fff;
+            line-height: 15px;
+            span,a{
+              height: 15px;
+              line-height: 15px;
+              font-size: 10px;
+              color: #808080;
+              float: right;
+              margin-top: -2px;
+            }
+            span{
+              float:left;
+              margin-left: 4px;
+            }
+            input{
+              float: left;
+            }
+            a{
+              cursor: pointer;
+            }
+
+          }
+          a{
+            .login_real{
+              width: 270px;
+              margin-top: 12px;
+              display: block;
+              font-size: 16px;
+              height: 34px;
+              line-height: 32px;
+              background: #ff8140;
+              border: 1px solid #f77c3d;
+              color: #fff;
+              box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+              border-radius: 2px;
+              text-align: center;
+              box-sizing: border-box;
+            }
+          }
+
+        }
+      }
     }
   }
 }

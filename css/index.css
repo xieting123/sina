@@ -5,7 +5,273 @@
   text-decoration: none;
   font-size: 14px;
 }
-.header {
+#a {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#a .fiexdLogo {
+  position: absolute;
+  display: none;
+  border-top: 2px solid #eb7350;
+  width: 620px;
+  height: 400px;
+  top: 300px;
+  left: 50%;
+  margin-left: -310px;
+  z-index: 1000;
+  padding: 35px 116px 29px 116px;
+  box-sizing: border-box;
+}
+#a .fiexdLogo .close {
+  color: #696e78;
+  font-size: 18px;
+  font-family: lisancai!important;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  z-index: 1001 ;
+  cursor: pointer;
+}
+#a .fiexdLogo .login {
+  left: 32px;
+  width: 340px;
+  height: 336px;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+#a .fiexdLogo .login .minLogin {
+  box-sizing: border-box;
+  border: 2px solid #EEEEF1;
+  width: 620px;
+  height: 400px;
+  background: white;
+  position: absolute;
+  left: -148px;
+  top: -35px;
+}
+#a .fiexdLogo .login .minLogin .top {
+  width: 400px;
+  height: 45px;
+  border-bottom: 1px solid #eee;
+  padding-top: 11px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 40px;
+}
+#a .fiexdLogo .login .minLogin .top .right,
+#a .fiexdLogo .login .minLogin .top .left {
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 10px;
+  color: #808080;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#a .fiexdLogo .login .minLogin .top .current {
+  border-bottom: 3px solid #eb7350;
+  color: #000;
+}
+#a .fiexdLogo .login .minLogin .idLogo {
+  position: relative;
+  width: 270px;
+  height: 191px;
+  margin: auto;
+  display: block;
+  top: 40px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig {
+  position: relative;
+  display: block;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .textbox {
+  width: 270px;
+  height: 34px;
+  background: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .textbox .person {
+  width: 36px;
+  height: 28px;
+  background: url("../images/sina.png") no-repeat;
+  background-position: 11px -91px;
+  float: left;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .textbox .text {
+  font-size: 10px;
+  outline: none;
+  border: 0;
+  background: none;
+  height: 34px;
+  color: #808080;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .passWorld {
+  margin-top: 12px;
+  width: 270px;
+  height: 34px;
+  background: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .passWorld .lock {
+  width: 36px;
+  height: 28px;
+  background: url("../images/sina.png") no-repeat;
+  background-position: -39px -91px;
+  float: left;
+}
+#a .fiexdLogo .login .minLogin .idLogo .idLogoBig .passWorld input {
+  font-size: 10px;
+  outline: none;
+  border: 0;
+  background: none;
+  height: 34px;
+  color: #ccc;
+}
+#a .fiexdLogo .login .minLogin .idLogo .remember {
+  height: 15px;
+  width: 270px;
+  margin: auto;
+  margin-top: 12px;
+  background: #fff;
+  line-height: 15px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .remember span,
+#a .fiexdLogo .login .minLogin .idLogo .remember a {
+  height: 15px;
+  line-height: 15px;
+  font-size: 10px;
+  color: #808080;
+  float: right;
+  margin-top: -2px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .remember span {
+  float: left;
+  margin-left: 4px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .remember input {
+  float: left;
+}
+#a .fiexdLogo .login .minLogin .idLogo .remember a {
+  cursor: pointer;
+}
+#a .fiexdLogo .login .minLogin .idLogo a .login_real {
+  width: 270px;
+  margin-top: 12px;
+  display: block;
+  font-size: 16px;
+  height: 34px;
+  line-height: 32px;
+  background: #ff8140;
+  border: 1px solid #f77c3d;
+  color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#a .fiexdLogo .login .minLogin .idLogo .info {
+  color: #808080;
+  font-size: 12px;
+  height: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  border-bottom-color: rgba(204, 204, 204, 0.5);
+  margin-top: 12px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .info span a {
+  font-size: 12px;
+  color: #eb7350;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other {
+  color: #808080;
+  font-size: 12px;
+  margin-top: 12px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other span {
+  display: block;
+  float: left;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other a {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .taobao {
+  background: url("../images/sina.png") no-repeat;
+  background-position: 0 -48px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .qq {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -50px -48px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .dianxin {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -100px -48px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .yun {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -150px -48px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .jia {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -200px -48px;
+}
+#a .fiexdLogo .login .minLogin .idLogo .other .liantong {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -250px -48px;
+}
+#a .fiexdLogo .login .minLogin .logoContent {
+  position: relative;
+  width: 172px;
+  height: 174px;
+  margin: auto;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 14px;
+  display: none;
+  margin-top: 20px;
+}
+#a .fiexdLogo .login .minLogin .logoContent img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+#a .fiexdLogo .login .minLogin .logoContent span {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: auto;
+}
+#a .fiexdLogo .login .minLogin .logoContent .logoContent_bottom {
+  position: absolute;
+  bottom: -25px;
+  left: 25px;
+  color: #808080;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+#a .fiexdLogo .login .minLogin .logoContent .logoContent_bottom a {
+  color: #eb7350;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+#a .header {
   z-index: 100;
   overflow: hidden;
   width: 100%;
@@ -18,7 +284,7 @@
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
 }
-.header .header_main {
+#a .header .header_main {
   width: 1280px;
   height: 47px;
   margin: auto;
@@ -26,14 +292,14 @@
   position: relative;
   line-height: 47px;
 }
-.header .header_main .logo {
+#a .header .header_main .logo {
   background: url("../images/logo.png") no-repeat center;
   width: 140px;
   height: 48px;
   float: left;
   margin-top: -2px;
 }
-.header .header_main .search {
+#a .header .header_main .search {
   opacity: 1;
   margin-top: 11px;
   width: 468px;
@@ -49,7 +315,7 @@
   padding-left: 10px;
   line-height: 28px;
 }
-.header .header_main .realSearch {
+#a .header .header_main .realSearch {
   background-color: transparent;
   opacity: 1;
   margin-top: 10px;
@@ -62,28 +328,91 @@
   left: 140px;
   padding-left: 10px;
 }
-.header .header_main .index {
+#a .header .header_main .index {
   width: 457px;
   height: 47px;
   float: right;
+  font-family: "lisancai" !important;
+  color: #808080;
+  font-size: 16px;
 }
-.mainArea {
+#a .header .header_main .index span:hover {
+  color: #eb7350;
+  cursor: pointer;
+}
+#a .header .header_main .index span:hover a {
+  color: #eb7350;
+  cursor: pointer;
+}
+#a .header .header_main .index :nth-child(2) {
+  font-size: 18px;
+}
+#a .header .header_main .index :nth-child(2) :nth-child(1) {
+  top: -3px;
+}
+#a .header .header_main .index span {
+  line-height: 26px;
+  font-size: 22px;
+  width: 26px;
+  margin-left: 45px;
+  margin-top: 2px;
+  position: relative;
+}
+#a .header .header_main .index span a {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 26px;
+  white-space: nowrap;
+  height: 26px;
+  color: #333;
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  left: 26px;
+}
+#a .header .header_main .index .index_right {
+  float: right;
+  height: 100%;
+}
+#a .header .header_main .index .index_right .zhuce,
+#a .header .header_main .index .index_right .denglu {
+  color: #333;
+  font-size: 14px;
+  margin-left: 0px;
+}
+#a .header .header_main .index .index_right .denglu:hover {
+  color: #eb7350;
+  cursor: pointer;
+}
+#a .header .header_main .index .index_right .zhuce:hover {
+  color: #eb7350;
+  cursor: pointer;
+}
+#a .header .header_main .index .index_right :nth-child(1) {
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+#a .header .header_main .index .index_right :nth-child(2) {
+  padding-left: 20px;
+}
+#a .mainArea {
   width: 1170px;
   margin: auto;
-  height: 2000px;
+  height: 100%;
   padding-top: 66px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  left: 0;
+  top: 0;
 }
-.mainArea .nav,
-.mainArea .nav1 {
+#a .mainArea .leftNav .nav {
   width: 110px;
-  height: 513px;
+  /*height: 513px;*/
   background: white;
   float: left;
 }
-.mainArea .nav li,
-.mainArea .nav1 li {
+#a .mainArea .leftNav .nav li {
   margin-bottom: 3px;
   font-size: 12px;
   letter-spacing: normal;
@@ -92,13 +421,11 @@
   text-align: center;
   border-radius: 3px;
 }
-.mainArea .nav li .current,
-.mainArea .nav1 li .current {
+#a .mainArea .leftNav .nav li .current {
   background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
   color: #fff;
 }
-.mainArea .nav li a,
-.mainArea .nav1 li a {
+#a .mainArea .leftNav .nav li a {
   color: #333333;
   display: block;
   font-size: 18px;
@@ -110,42 +437,99 @@
   white-space: nowrap;
   padding: 0 8px;
 }
-.mainArea .nav li a:hover,
-.mainArea .nav1 li a:hover {
+#a .mainArea .leftNav .nav li a:hover {
   background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
   color: #fff;
 }
-.mainArea .nav1 {
+#a .mainArea .leftNav1 {
+  display: none;
   position: fixed;
   top: 50px;
-  display: none;
+  z-index: 120;
 }
-.mainArea .main {
+#a .mainArea .leftNav1 .nav1 {
+  width: 110px;
+  /*height: 513px;*/
+  background: white;
+  float: left;
+}
+#a .mainArea .leftNav1 .nav1 li {
+  margin-bottom: 3px;
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+}
+#a .mainArea .leftNav1 .nav1 li .current {
+  background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+  color: #fff;
+}
+#a .mainArea .leftNav1 .nav1 li a {
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  height: 40px;
+  line-height: 42px;
+  border-radius: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 8px;
+}
+#a .mainArea .leftNav1 .nav1 li a:hover {
+  background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+  color: #fff;
+}
+#a .mainArea .main {
+  position: relative;
   width: 660px;
-  height: 888px;
 }
-.mainArea .rightNav {
+#a .mainArea .rightNav {
   float: right;
   width: 340px;
-  height: 999px;
 }
-.mainArea .rightNav .login {
+#a .mainArea .rightNav .login {
   width: 340px;
-  height: 346px;
+  height: 336px;
   background: #f2f2f5;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  position: relative;
 }
-.mainArea .rightNav .login .minLogin {
+#a .mainArea .rightNav .login .phoneBg {
+  width: 264px;
+  height: 372px;
+  background: url("../images/sina.png") no-repeat;
+  background-position: -300px -150px;
+  position: absolute;
+  z-index: 999;
+  left: -220px;
+  top: 0px;
+  display: none;
+}
+#a .mainArea .rightNav .login .minLogin {
   border: 2px solid #EEEEF1;
-  box-sizing: border-box;
   width: 300px;
-  height: 286px;
+  height: 290px;
   background: white;
   position: relative;
 }
-.mainArea .rightNav .login .minLogin .top {
+#a .mainArea .rightNav .login .minLogin .changeBtn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  background: url("../images/sina.png") no-repeat center;
+  background-position: 0px -150px;
+  transition: background-position 0.2s;
+}
+#a .mainArea .rightNav .login .minLogin .changeBtn1 {
+  background-position: -40px -191px;
+}
+#a .mainArea .rightNav .login .minLogin .top {
   width: 270px;
   height: 44px;
   margin: auto;
@@ -154,8 +538,9 @@
   margin-bottom: 16px;
   box-sizing: border-box;
 }
-.mainArea .rightNav .login .minLogin .top .right,
-.mainArea .rightNav .login .minLogin .top .left {
+#a .mainArea .rightNav .login .minLogin .top .right,
+#a .mainArea .rightNav .login .minLogin .top .left {
+  cursor: pointer;
   width: 50%;
   float: left;
   height: 33px;
@@ -165,30 +550,36 @@
   line-height: 30px;
   color: #808080;
 }
-.mainArea .rightNav .login .minLogin .top .current {
+#a .mainArea .rightNav .login .minLogin .top .current {
   border-bottom: 3px solid #eb7350;
   color: #000;
 }
-.mainArea .rightNav .login .minLogin .idLogo {
+#a .mainArea .rightNav .login .minLogin .idLogo {
+  position: relative;
   width: 270px;
   height: 191px;
   margin: auto;
+  display: block;
 }
-.mainArea .rightNav .login .minLogin .idLogo .textbox {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig {
+  position: relative;
+  display: block;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .textbox {
   width: 270px;
   height: 34px;
   background: white;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.mainArea .rightNav .login .minLogin .idLogo .textbox .person {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .textbox .person {
   width: 36px;
   height: 28px;
   background: url("../images/sina.png") no-repeat;
   background-position: 11px -91px;
   float: left;
 }
-.mainArea .rightNav .login .minLogin .idLogo .textbox .text {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .textbox .text {
   font-size: 10px;
   outline: none;
   border: 0;
@@ -196,7 +587,7 @@
   height: 34px;
   color: #808080;
 }
-.mainArea .rightNav .login .minLogin .idLogo .passWorld {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .passWorld {
   margin-top: 12px;
   width: 270px;
   height: 34px;
@@ -204,14 +595,14 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-.mainArea .rightNav .login .minLogin .idLogo .passWorld .lock {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .passWorld .lock {
   width: 36px;
   height: 28px;
   background: url("../images/sina.png") no-repeat;
   background-position: -39px -91px;
   float: left;
 }
-.mainArea .rightNav .login .minLogin .idLogo .passWorld input {
+#a .mainArea .rightNav .login .minLogin .idLogo .idLogoBig .passWorld input {
   font-size: 10px;
   outline: none;
   border: 0;
@@ -219,7 +610,80 @@
   height: 34px;
   color: #ccc;
 }
-.mainArea .rightNav .login .minLogin .idLogo .remember {
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo {
+  display: none;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .textbox1 {
+  width: 270px;
+  height: 34px;
+  background: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .textbox1 .phone1 {
+  width: 36px;
+  height: 28px;
+  background: url("../images/sina.png") no-repeat;
+  background-position: -88px -91px;
+  float: left;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .textbox1 .text {
+  font-size: 10px;
+  outline: none;
+  border: 0;
+  background: none;
+  height: 34px;
+  color: #808080;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .msg {
+  margin-top: 12px;
+  width: 270px;
+  height: 34px;
+  background: white;
+  box-sizing: border-box;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .msg .msg_btn {
+  width: 156px;
+  background: #f2f2f5;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  height: 32px;
+  line-height: 33px;
+  padding: 0 10px 0 10px;
+  min-width: 40px;
+  text-align: center;
+  outline: none;
+  float: left;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  box-sizing: border-box;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .phoneLogo .msg input {
+  margin-left: 10px;
+  width: 102px;
+  box-shadow: none;
+  background-color: #fff;
+  color: #808080;
+  text-decoration: none;
+  height: 32px;
+  line-height: normal;
+  padding: 0 0 0 2px;
+  vertical-align: middle;
+  outline-style: none;
+  cursor: text;
+  float: right;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .remember {
   height: 15px;
   width: 270px;
   margin: auto;
@@ -227,8 +691,8 @@
   background: #fff;
   line-height: 15px;
 }
-.mainArea .rightNav .login .minLogin .idLogo .remember span,
-.mainArea .rightNav .login .minLogin .idLogo .remember a {
+#a .mainArea .rightNav .login .minLogin .idLogo .remember span,
+#a .mainArea .rightNav .login .minLogin .idLogo .remember a {
   height: 15px;
   line-height: 15px;
   font-size: 10px;
@@ -236,17 +700,17 @@
   float: right;
   margin-top: -2px;
 }
-.mainArea .rightNav .login .minLogin .idLogo .remember span {
+#a .mainArea .rightNav .login .minLogin .idLogo .remember span {
   float: left;
   margin-left: 4px;
 }
-.mainArea .rightNav .login .minLogin .idLogo .remember input {
+#a .mainArea .rightNav .login .minLogin .idLogo .remember input {
   float: left;
 }
-.mainArea .rightNav .login .minLogin .idLogo .remember a {
+#a .mainArea .rightNav .login .minLogin .idLogo .remember a {
   cursor: pointer;
 }
-.mainArea .rightNav .login .minLogin .idLogo a .login_real {
+#a .mainArea .rightNav .login .minLogin .idLogo a .login_real {
   width: 270px;
   margin-top: 12px;
   display: block;
@@ -260,4 +724,127 @@
   border-radius: 2px;
   text-align: center;
   box-sizing: border-box;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .info {
+  color: #808080;
+  font-size: 12px;
+  height: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  border-bottom-color: rgba(204, 204, 204, 0.5);
+  margin-top: 12px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .info span a {
+  font-size: 12px;
+  color: #eb7350;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other {
+  color: #808080;
+  font-size: 12px;
+  margin-top: 12px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other span {
+  display: block;
+  float: left;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other a {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .taobao {
+  background: url("../images/sina.png") no-repeat;
+  background-position: 0 -48px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .qq {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -50px -48px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .dianxin {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -100px -48px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .yun {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -150px -48px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .jia {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -200px -48px;
+}
+#a .mainArea .rightNav .login .minLogin .idLogo .other .liantong {
+  background: url("../images/sina.png") no-repeat;
+  background-position: -250px -48px;
+}
+#a .mainArea .rightNav .login .minLogin .logoContent {
+  position: relative;
+  width: 172px;
+  height: 174px;
+  margin: auto;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 14px;
+  display: none;
+}
+#a .mainArea .rightNav .login .minLogin .logoContent img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+#a .mainArea .rightNav .login .minLogin .logoContent span {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  margin: auto;
+}
+#a .mainArea .rightNav .login .minLogin .logoContent .logoContent_bottom {
+  position: absolute;
+  bottom: -25px;
+  left: 25px;
+  color: #808080;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+#a .mainArea .rightNav .login .minLogin .logoContent .logoContent_bottom a {
+  color: #eb7350;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+#a .toTop a,
+#a .refresh a {
+  font-family: lisancai !important;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.6;
+  bottom: 40px;
+  left: 81.2%;
+  background-color: #696e78;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+}
+#a .refresh a {
+  bottom: 90px;
+}
+#b {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  background: black;
+  z-index: 999;
+  opacity: .5;
 }

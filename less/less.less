@@ -5,162 +5,72 @@
   text-decoration: none;
   font-size: 14px;
 }
-
-;
-.header {
-  z-index: 100;
-  overflow: hidden;
-  width: 100%;
-  height: 51px;
-  position: fixed;
+#a {
+  position: relative;
   top: 0;
-  border-top: 2px solid #eb7350;
-  background: #fff;
-  opacity: 0.9;
-  box-sizing: border-box;
-  border-bottom: 1px solid #ccc;
-  .header_main {
-    width: 1280px;
-    height: 47px;
-    margin: auto;
-    background: #fff;
-    position: relative;
-    line-height: 47px;
-    .logo {
-      background: url("../images/logo.png") no-repeat center;
-      width: 140px;
-      height: 48px;
-      float: left;
-      margin-top: -2px;
-    }
-    .search {
-      opacity: 1;
-      margin-top: 11px;
-      width: 468px;
-      height: 28px;
-      float: left;
+  left: 0;
+  .fiexdLogo {
+    position: absolute;
+    .close{
+      color: #696e78;
+      font-size: 18px;
+      font-family: lisancai!important;
       position: absolute;
-      left: 141px;
-      background-color: #EFEFEF;
-      color: #808080;
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: inherit;
-      padding-left: 10px;
-      line-height: 28px;
+      right: 8px;
+      top: 12px;
+      width: 20px;
+      height: 20px;
+      z-index:1001 ;
+      cursor: pointer;
     }
-    .realSearch {
-      background-color: transparent;
-      opacity: 1;
-      margin-top: 10px;
-      width: 468px;
-      height: 28px;
-      float: left;
-      border: 1px solid #ccc;
-      z-index: 10;
-      position: absolute;
-      left: 140px;
-      padding-left: 10px;
-    }
-    .index {
-      width: 457px;
-      height: 47px;
-      float: right;
-
-    }
-  }
-}
-
-.mainArea {
-  width: 1170px;
-  margin: auto;
-  height: 2000px;
-  padding-top: 66px;
-  display: flex;
-  justify-content: space-between;
-  .nav, .nav1 {
-    width: 110px;
-    height: 513px;
-    background: white;
-    float: left;
-    li {
-      margin-bottom: 3px;
-      font-size: 12px;
-      letter-spacing: normal;
-      word-spacing: normal;
-      color: #fff;
-      text-align: center;
-      border-radius: 3px;
-      .current {
-        background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
-        color: #fff;
-      }
-      a {
-        color: #333333;
-        display: block;
-        font-size: 18px;
-        height: 40px;
-        line-height: 42px;
-        border-radius: 3px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 0 8px;
-      }
-      a:hover {
-        background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
-        color: #fff;
-      }
-    }
-  }
-  .nav1 {
-    position: fixed;
-    top: 50px;
     display: none;
-  }
-  .main {
+    border-top: 2px solid #eb7350;
+    width: 620px;
+    height: 400px;
+    top: 300px;
+    left: 50%;
 
-    width: 660px;
-    height: 888px;
+    margin-left: -310px;
+    z-index: 1000;
 
-  }
-  .rightNav {
-    float: right;
-    width: 340px;
-    height: 999px;
-  
+    padding: 35px 116px 29px 116px;
+    box-sizing: border-box;
     .login {
+      left: 32px;
       width: 340px;
-      height: 346px;
-      background: #f2f2f5;
-      padding: 20px;
+      height: 336px;
+      padding: 20px 20px 0 20px;
       margin-bottom: 20px;
       box-sizing: border-box;
+      position: relative;
       .minLogin {
-        border: 2px solid #EEEEF1;
         box-sizing: border-box;
-        width: 300px;
-        height: 286px;
+        border: 2px solid #EEEEF1;
+        width: 620px;
+        height: 400px;
         background: white;
-        position: relative;
+        position: absolute;
+        left: -148px;
+        top: -35px;
         .top {
-          width: 270px;
-          height: 44px;
-          margin: auto;
+          width: 400px;
+          height: 45px;
           border-bottom: 1px solid #eee;
           padding-top: 11px;
           margin-bottom: 16px;
           box-sizing: border-box;
+          margin: auto;
+          margin-top: 40px;
           .right, .left {
+            cursor: pointer;
             width: 50%;
             float: left;
-            height: 33px;
             box-sizing: border-box;
-            font-weight: 700;
             text-align: center;
-
-            line-height: 30px;
+            line-height: 10px;
             color: #808080;
+            font-size: 20px;
+            padding-bottom: 20px;
           }
           .current {
             border-bottom: 3px solid #eb7350;
@@ -168,54 +78,60 @@
           }
         }
         .idLogo {
-
+          position: relative;
           width: 270px;
           height: 191px;
           margin: auto;
-          .textbox {
-            width: 270px;
-            height: 34px;
-            background: white;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            .person {
-              width: 36px;
-              height: 28px;
-              background: url("../images/sina.png") no-repeat;
-              background-position: 11px -91px;
-              float: left;
-            }
-            .text {
-              font-size: 10px;
-              outline: none;
-              border: 0;
-              background: none;
+          display: block;
+          top: 40px;
+          .idLogoBig {
+            position: relative;
+            display: block;
+            .textbox {
+              width: 270px;
               height: 34px;
-              color: #808080;
+              background: white;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+              .person {
+                width: 36px;
+                height: 28px;
+                background: url("../images/sina.png") no-repeat;
+                background-position: 11px -91px;
+                float: left;
+              }
+              .text {
+                font-size: 10px;
+                outline: none;
+                border: 0;
+                background: none;
+                height: 34px;
+                color: #808080;
+              }
             }
-          }
-          .passWorld {
-            margin-top: 12px;
-            width: 270px;
-            height: 34px;
-            background: white;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            .lock {
-              width: 36px;
-              height: 28px;
-              background: url("../images/sina.png") no-repeat;
-              background-position: -39px -91px;
-              float: left;
-            }
-            input {
-              font-size: 10px;
-              outline: none;
-              border: 0;
-              background: none;
+            .passWorld {
+              margin-top: 12px;
+              width: 270px;
               height: 34px;
-              color: #ccc;
+              background: white;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+              .lock {
+                width: 36px;
+                height: 28px;
+                background: url("../images/sina.png") no-repeat;
+                background-position: -39px -91px;
+                float: left;
+              }
+              input {
+                font-size: 10px;
+                outline: none;
+                border: 0;
+                background: none;
+                height: 34px;
+                color: #ccc;
 
+              }
             }
           }
           .remember {
@@ -225,7 +141,7 @@
             margin-top: 12px;
             background: #fff;
             line-height: 15px;
-            span,a{
+            span, a {
               height: 15px;
               line-height: 15px;
               font-size: 10px;
@@ -233,20 +149,20 @@
               float: right;
               margin-top: -2px;
             }
-            span{
-              float:left;
+            span {
+              float: left;
               margin-left: 4px;
             }
-            input{
+            input {
               float: left;
             }
-            a{
+            a {
               cursor: pointer;
             }
 
           }
-          a{
-            .login_real{
+          a {
+            .login_real {
               width: 270px;
               margin-top: 12px;
               display: block;
@@ -256,15 +172,708 @@
               background: #ff8140;
               border: 1px solid #f77c3d;
               color: #fff;
-              box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+              box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
               border-radius: 2px;
               text-align: center;
               box-sizing: border-box;
             }
           }
+          .info {
+            color: #808080;
+            font-size: 12px;
+            height: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            border-bottom-color: rgba(204, 204, 204, .5);
+            margin-top: 12px;
+            span {
+              a {
+                font-size: 12px;
+                color: #eb7350;
+              }
+            }
+          }
+          .other {
+            color: #808080;
+            font-size: 12px;
+            margin-top: 12px;
+            span {
+              display: block;
+              float: left;
+            }
+            a {
+              display: block;
+              float: left;
+              width: 20px;
+              height: 20px;
+            }
+            .taobao {
+              background: url("../images/sina.png") no-repeat;
+              background-position: 0 -48px;
+            }
+            .qq {
+              background: url("../images/sina.png") no-repeat;
+              background-position: -50px -48px;
+            }
+            .dianxin {
+              background: url("../images/sina.png") no-repeat;
+              background-position: -100px -48px;
+            }
+            .yun {
+              background: url("../images/sina.png") no-repeat;
+              background-position: -150px -48px;
+            }
+            .jia {
+              background: url("../images/sina.png") no-repeat;
+              background-position: -200px -48px;
+            }
+            .liantong {
+              background: url("../images/sina.png") no-repeat;
+              background-position: -250px -48px;
+            }
+          }
 
+        }
+
+        .logoContent {
+          position: relative;
+          width: 172px;
+          height: 174px;
+          margin: auto;
+          border: 1px solid #f3f3f3;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          padding-top: 14px;
+          display: none;
+          margin-top: 20px;
+          img {
+            display: block;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+          }
+          span {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+            margin: auto;
+          }
+          .logoContent_bottom {
+            position: absolute;
+            bottom: -25px;
+            left: 25px;
+            color: #808080;
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+            a {
+              color: #eb7350;
+              text-decoration: none;
+              text-align: center;
+              font-size: 12px;
+            }
+          }
         }
       }
     }
   }
+  .header {
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+    height: 51px;
+    position: fixed;
+    top: 0;
+    border-top: 2px solid #eb7350;
+    background: #fff;
+    opacity: 0.9;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    .header_main {
+      width: 1280px;
+      height: 47px;
+      margin: auto;
+      background: #fff;
+      position: relative;
+      line-height: 47px;
+      .logo {
+        background: url("../images/logo.png") no-repeat center;
+        width: 140px;
+        height: 48px;
+        float: left;
+        margin-top: -2px;
+      }
+      .search {
+        opacity: 1;
+        margin-top: 11px;
+        width: 468px;
+        height: 28px;
+        float: left;
+        position: absolute;
+        left: 141px;
+        background-color: #EFEFEF;
+        color: #808080;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: inherit;
+        padding-left: 10px;
+        line-height: 28px;
+      }
+      .realSearch {
+        background-color: transparent;
+        opacity: 1;
+        margin-top: 10px;
+        width: 468px;
+        height: 28px;
+        float: left;
+        border: 1px solid #ccc;
+        z-index: 10;
+        position: absolute;
+        left: 140px;
+        padding-left: 10px;
+      }
+      .index {
+        span:hover {
+
+          color: #eb7350;
+          cursor: pointer;
+          a {
+            color: #eb7350;
+            cursor: pointer;
+          }
+        }
+        width: 457px;
+        height: 47px;
+        float: right;
+        font-family: "lisancai" !important;
+        color: #808080;
+        font-size: 16px;
+        & :nth-child(2) {
+          font-size: 18px;
+          & :nth-child(1) {
+            top: -3px;
+          }
+        }
+        span {
+          line-height: 26px;
+          font-size: 22px;
+          width: 26px;
+          margin-left: 45px;
+          margin-top: 2px;
+          position: relative;
+          a {
+            display: inline-block;
+            overflow: hidden;
+            line-height: 26px;
+            white-space: nowrap;
+            height: 26px;
+            color: #333;
+            text-decoration: none;
+            position: absolute;
+            top: 0px;
+            left: 26px;
+          }
+        }
+        .index_right {
+          float: right;
+          height: 100%;
+
+          .zhuce, .denglu {
+            color: #333;
+            font-size: 14px;
+            margin-left: 0px;
+          }
+          .denglu:hover {
+            color: #eb7350;
+            cursor: pointer;
+          }
+          .zhuce:hover {
+            color: #eb7350;
+            cursor: pointer;
+          }
+          & :nth-child(1) {
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+          }
+          & :nth-child(2) {
+            padding-left: 20px;
+          }
+        }
+      }
+
+    }
+  }
+  .mainArea {
+    width: 1170px;
+    margin: auto;
+    height: 100%;
+    padding-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    top: 0;
+    .leftNav {
+      .nav {
+        width: 110px;
+        /*height: 513px;*/
+        background: white;
+        float: left;
+        li {
+          margin-bottom: 3px;
+          font-size: 12px;
+          letter-spacing: normal;
+          word-spacing: normal;
+          color: #fff;
+          text-align: center;
+          border-radius: 3px;
+          .current {
+            background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+            color: #fff;
+          }
+          a {
+            color: #333333;
+            display: block;
+            font-size: 18px;
+            height: 40px;
+            line-height: 42px;
+            border-radius: 3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 8px;
+          }
+          a:hover {
+            background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+            color: #fff;
+          }
+        }
+      }
+    }
+    .leftNav1 {
+      display: none;
+      position: fixed;
+      top: 50px;
+      z-index: 120;
+      .nav1 {
+        width: 110px;
+        /*height: 513px;*/
+        background: white;
+        float: left;
+        li {
+          margin-bottom: 3px;
+          font-size: 12px;
+          letter-spacing: normal;
+          word-spacing: normal;
+          color: #fff;
+          text-align: center;
+          border-radius: 3px;
+          .current {
+            background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+            color: #fff;
+          }
+          a {
+            color: #333333;
+            display: block;
+            font-size: 18px;
+            height: 40px;
+            line-height: 42px;
+            border-radius: 3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 8px;
+          }
+          a:hover {
+            background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+            color: #fff;
+          }
+        }
+      }
+    }
+    .main {
+      position: relative;
+      width: 660px;
+    }
+    .rightNav {
+      float: right;
+      width: 340px;
+
+      .login {
+        width: 340px;
+        height: 336px;
+        background: #f2f2f5;
+        padding: 20px 20px 0 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        position: relative;
+        .phoneBg {
+          width: 264px;
+          height: 372px;
+          background: url("../images/sina.png") no-repeat;
+          background-position: -300px -150px;
+          position: absolute;
+          z-index: 999;
+          left: -220px;
+          top: 0px;
+          display: none;
+        }
+        .minLogin {
+          border: 2px solid #EEEEF1;
+          width: 300px;
+          height: 290px;
+          background: white;
+          position: relative;
+          .changeBtn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 0;
+            background: url("../images/sina.png") no-repeat center;
+            background-position: 0px -150px;
+            transition: background-position .2s;
+
+          }
+          .changeBtn1 {
+            background-position: -40px -191px;
+          }
+
+          .top {
+            width: 270px;
+            height: 44px;
+            margin: auto;
+            border-bottom: 1px solid #eee;
+            padding-top: 11px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            .right, .left {
+              cursor: pointer;
+              width: 50%;
+              float: left;
+              height: 33px;
+              box-sizing: border-box;
+              font-weight: 700;
+              text-align: center;
+
+              line-height: 30px;
+              color: #808080;
+            }
+            .current {
+              border-bottom: 3px solid #eb7350;
+              color: #000;
+            }
+          }
+          .idLogo {
+            position: relative;
+            width: 270px;
+            height: 191px;
+            margin: auto;
+            display: block;
+            .idLogoBig {
+              position: relative;
+              display: block;
+              .textbox {
+                width: 270px;
+                height: 34px;
+                background: white;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                .person {
+                  width: 36px;
+                  height: 28px;
+                  background: url("../images/sina.png") no-repeat;
+                  background-position: 11px -91px;
+                  float: left;
+                }
+                .text {
+                  font-size: 10px;
+                  outline: none;
+                  border: 0;
+                  background: none;
+                  height: 34px;
+                  color: #808080;
+                }
+              }
+              .passWorld {
+                margin-top: 12px;
+                width: 270px;
+                height: 34px;
+                background: white;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                .lock {
+                  width: 36px;
+                  height: 28px;
+                  background: url("../images/sina.png") no-repeat;
+                  background-position: -39px -91px;
+                  float: left;
+                }
+                input {
+                  font-size: 10px;
+                  outline: none;
+                  border: 0;
+                  background: none;
+                  height: 34px;
+                  color: #ccc;
+
+                }
+              }
+            }
+            .phoneLogo {
+              display: none;
+              .textbox1 {
+                width: 270px;
+                height: 34px;
+                background: white;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                .phone1 {
+                  width: 36px;
+                  height: 28px;
+                  background: url("../images/sina.png") no-repeat;
+                  background-position: -88px -91px;
+                  float: left;
+                }
+                .text {
+                  font-size: 10px;
+                  outline: none;
+                  border: 0;
+                  background: none;
+                  height: 34px;
+                  color: #808080;
+                }
+              }
+              .msg {
+                margin-top: 12px;
+                width: 270px;
+                height: 34px;
+                background: white;
+
+                box-sizing: border-box;
+                .msg_btn {
+                  width: 156px;
+                  background: #f2f2f5;
+                  font-size: 12px;
+
+                  color: #333;
+                  text-decoration: none;
+                  display: inline-block;
+                  height: 32px;
+                  line-height: 33px;
+                  padding: 0 10px 0 10px;
+                  min-width: 40px;
+                  text-align: center;
+                  outline: none;
+                  float: left;
+                  border-radius: 2px;
+                  border-width: 1px;
+                  border-style: solid;
+                  border-color: #d9d9d9;
+                  box-sizing: border-box;
+                }
+                input {
+                  margin-left: 10px;
+                  width: 102px;
+                  box-shadow: none;
+                  background-color: #fff;
+                  color: #808080;
+                  text-decoration: none;
+                  height: 32px;
+                  line-height: normal;
+                  padding: 0 0 0 2px;
+                  vertical-align: middle;
+                  outline-style: none;
+                  cursor: text;
+                  float: right;
+                  border-radius: 2px;
+                  border-width: 1px;
+                  border-style: solid;
+                  border-color: #d9d9d9;
+                  padding-left: 10px;
+                  box-sizing: border-box;
+                }
+              }
+            }
+            .remember {
+              height: 15px;
+              width: 270px;
+              margin: auto;
+              margin-top: 12px;
+              background: #fff;
+              line-height: 15px;
+              span, a {
+                height: 15px;
+                line-height: 15px;
+                font-size: 10px;
+                color: #808080;
+                float: right;
+                margin-top: -2px;
+              }
+              span {
+                float: left;
+                margin-left: 4px;
+              }
+              input {
+                float: left;
+              }
+              a {
+                cursor: pointer;
+              }
+
+            }
+            a {
+              .login_real {
+                width: 270px;
+                margin-top: 12px;
+                display: block;
+                font-size: 16px;
+                height: 34px;
+                line-height: 32px;
+                background: #ff8140;
+                border: 1px solid #f77c3d;
+                color: #fff;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                border-radius: 2px;
+                text-align: center;
+                box-sizing: border-box;
+              }
+            }
+            .info {
+              color: #808080;
+              font-size: 12px;
+              height: 15px;
+              padding-bottom: 10px;
+              border-bottom: 1px solid #ccc;
+              border-bottom-color: rgba(204, 204, 204, .5);
+              margin-top: 12px;
+              span {
+                a {
+                  font-size: 12px;
+                  color: #eb7350;
+                }
+              }
+            }
+            .other {
+              color: #808080;
+              font-size: 12px;
+              margin-top: 12px;
+              span {
+                display: block;
+                float: left;
+              }
+              a {
+                display: block;
+                float: left;
+                width: 20px;
+                height: 20px;
+              }
+              .taobao {
+                background: url("../images/sina.png") no-repeat;
+                background-position: 0 -48px;
+              }
+              .qq {
+                background: url("../images/sina.png") no-repeat;
+                background-position: -50px -48px;
+              }
+              .dianxin {
+                background: url("../images/sina.png") no-repeat;
+                background-position: -100px -48px;
+              }
+              .yun {
+                background: url("../images/sina.png") no-repeat;
+                background-position: -150px -48px;
+              }
+              .jia {
+                background: url("../images/sina.png") no-repeat;
+                background-position: -200px -48px;
+              }
+              .liantong {
+                background: url("../images/sina.png") no-repeat;
+                background-position: -250px -48px;
+              }
+            }
+
+          }
+
+          .logoContent {
+            position: relative;
+            width: 172px;
+            height: 174px;
+            margin: auto;
+            border: 1px solid #f3f3f3;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-top: 14px;
+            display: none;
+            img {
+              display: block;
+              margin: auto;
+              width: 150px;
+              height: 150px;
+            }
+            span {
+              color: #333;
+              text-decoration: none;
+              display: block;
+              font-size: 12px;
+              margin: auto;
+            }
+            .logoContent_bottom {
+              position: absolute;
+              bottom: -25px;
+              left: 25px;
+              color: #808080;
+              text-decoration: none;
+              text-align: center;
+              font-size: 12px;
+              a {
+                color: #eb7350;
+                text-decoration: none;
+                text-align: center;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .toTop,.refresh{
+    a {
+      font-family: lisancai !important;
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.6;
+      bottom: 40px;
+      left: 81.2%;
+      background-color: #696e78;
+      color: #fff;
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
+  .refresh{
+    a {
+      bottom: 90px;
+    }
+  }
+}
+#b {
+  display:none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  background: black;
+  z-index: 999;
+  opacity: .5;
 }

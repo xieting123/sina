@@ -4,3 +4,8 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: nk;
+    src: url(wbficon.woff) format("woff");
+    font-style: normal;
+}
